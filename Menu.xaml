@@ -1,0 +1,16 @@
+﻿<Window x:Class="ToursApp.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToursApp"
+        mc:Ignorable="d"
+        Title="Menu" Height="307.125" Width="595.25" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Button Content="Список всех отелей" HorizontalAlignment="Left" Margin="23,24,0,0" VerticalAlignment="Top" Width="168" Height="41" Click="hotelsWindow"/>
+        <Button Content="Список всех туров" HorizontalAlignment="Left" Margin="23,84,0,0" VerticalAlignment="Top" Width="168" Height="41" Click="toursWindow"/>
+        <Button Content="Оформление заявки" HorizontalAlignment="Left" Margin="23,145,0,0" VerticalAlignment="Top" Width="168" Height="41" Click="taskWindow"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="23,212,0,0" VerticalAlignment="Top" Width="168" Height="41" Click="backButton"/>
+
+    </Grid>
+</Window>
