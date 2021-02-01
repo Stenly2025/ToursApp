@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ToursApp"
         mc:Ignorable="d"
-        Title="Menu" Height="307.125" Width="595.25" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Menu" Height="307.125" Width="595.25" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
     <Grid>
         <Button Content="Список всех отелей" HorizontalAlignment="Left" Margin="23,24,0,0" VerticalAlignment="Top" Width="168" Height="41" Click="hotelsWindow"/>
         <Button Content="Список всех туров" HorizontalAlignment="Left" Margin="23,84,0,0" VerticalAlignment="Top" Width="168" Height="41" Click="toursWindow"/>
-        <Button Content="Оформление заявки" HorizontalAlignment="Left" Margin="23,145,0,0" VerticalAlignment="Top" Width="168" Height="41" Click="taskWindow"/>
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="23,212,0,0" VerticalAlignment="Top" Width="168" Height="41" Click="backButton"/>
+        <Button x:Name="TicketTake" Content="Оформление заявки" HorizontalAlignment="Left" Margin="23,145,0,0" VerticalAlignment="Top" Width="168" Height="41" Click="taskWindow"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="23,255,0,0" VerticalAlignment="Top" Width="168" Height="41" Click="backButton"/>
 
     </Grid>
 </Window>

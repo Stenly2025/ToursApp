@@ -20,5 +20,6 @@ namespace ToursApp
         public string surname { get; set; }
         public int Id { get; set; }
         public string Role { get; set; }
+        public byte[] Ticket { get; set; }
     }
 }

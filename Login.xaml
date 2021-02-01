@@ -5,19 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ToursApp"
         mc:Ignorable="d"
-        Title="Login" Height="211.878" Width="301.333" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Login" Height="293.478" Width="309.733" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="34,23,0,0" TextWrapping="Wrap" Text="Логин:" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="34,69,0,0" TextWrapping="Wrap" Text="Пароль:" VerticalAlignment="Top"/>
-        <TextBox x:Name="logintext" HorizontalAlignment="Left" Height="23" Margin="109,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.462,0.539"/>
-        <Button Content="Зарегистрироватся" HorizontalAlignment="Left" Margin="16,151,0,0" VerticalAlignment="Top" Width="116" Height="21" Click="SignUP"/>
-        <Button Content="Войти" HorizontalAlignment="Left" Margin="154,151,0,0" VerticalAlignment="Top" Width="107" Click="SignIn" Height="21"/>
-        <PasswordBox x:Name="passwordtext" HorizontalAlignment="Left" Margin="109,65,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
-        <TextBlock HorizontalAlignment="Left" Margin="34,102,0,0" TextWrapping="Wrap" Text="Капча:" VerticalAlignment="Top"/>
-        <TextBox x:Name="captcha" HorizontalAlignment="Left" Height="23" Margin="109,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.462,0.539"/>
-        <Label x:Name="CaptchaLabel" Content="" HorizontalAlignment="Left" Margin="154,122,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,65,0,0" TextWrapping="Wrap" Text="Логин:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,97,0,0" TextWrapping="Wrap" Text="Пароль:" VerticalAlignment="Top"/>
+        <TextBox x:Name="logintext" HorizontalAlignment="Left" Height="23" Margin="125,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.462,0.539"/>
+        <Button Content="Зарегистрироватся" HorizontalAlignment="Left" Margin="15,216,0,0" VerticalAlignment="Top" Width="116" Height="21" Click="SignUP"/>
+        <Button Content="Войти" HorizontalAlignment="Left" Margin="186,216,0,0" VerticalAlignment="Top" Width="107" Click="SignIn" Height="21"/>
+        <PasswordBox x:Name="passwordtext" HorizontalAlignment="Left" Margin="125,93,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,130,0,0" TextWrapping="Wrap" Text="Капча:" VerticalAlignment="Top"/>
+        <TextBox x:Name="captcha" HorizontalAlignment="Left" Height="23" Margin="125,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.462,0.539"/>
+        <Label x:Name="CaptchaLabel" Content="" HorizontalAlignment="Left" Margin="170,164,0,0" VerticalAlignment="Top" Width="75"/>
         <Button  HorizontalAlignment="Left" Margin="320,225,0,0" VerticalAlignment="Top" Width="16" Height="14" BorderBrush="Transparent"  Background="Transparent" Click="UpdateCaptcha"/>
-        <Button  HorizontalAlignment="Left" Margin="118,127,0,0" VerticalAlignment="Top" Width="17" Height="14" Background="Transparent" Click="UpdateCaptcha">
+        <Button  HorizontalAlignment="Left" Margin="134,169,0,0" VerticalAlignment="Top" Width="17" Height="14" Background="Transparent" Click="UpdateCaptcha">
             <Image Source="Resources/update.png"/>
         </Button>
 

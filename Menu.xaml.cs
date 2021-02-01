@@ -62,7 +62,9 @@ namespace ToursApp
 
         private void taskWindow(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Данное окно еще на стадии разработки");
+            TakeTicket tt = new TakeTicket();
+            tt.Visibility = Visibility.Visible;
+            this.Close();
         }
     }
 }

@@ -90,6 +90,7 @@
     <Property Name="name" Type="nvarchar" MaxLength="100" />
     <Property Name="surname" Type="nvarchar" MaxLength="100" />
     <Property Name="Role" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Ticket" Type="varbinary(max)" />
   </EntityType>
   <Association Name="FK_Hotel_Country">
     <End Role="Country" Type="Self.Country" Multiplicity="1" />

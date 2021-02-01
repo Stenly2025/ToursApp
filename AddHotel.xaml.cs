@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -75,8 +76,9 @@ namespace ToursApp
             ht.Visibility = Visibility.Visible;
             this.Close();
         }
-        
-        private void CountryCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+
+            private void CountryCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var id = CountryCB.SelectedIndex;
             _currentHotel.CountryCode = countries[id].Code;

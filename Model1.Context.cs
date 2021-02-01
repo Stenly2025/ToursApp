@@ -17,25 +17,17 @@ namespace ToursApp
     
     public partial class TourBaseEntitiesDB : DbContext
     {
-
         private static TourBaseEntitiesDB _context;
         public TourBaseEntitiesDB()
             : base("name=TourBaseEntitiesDB")
         {
         }
-        
-        public static TourBaseEntitiesDB GetContext()
-        {
-            if (_context == null)
-                _context = new TourBaseEntitiesDB();
-
-            return _context;
-        }
-
+        public static TourBaseEntitiesDB GetContext() { if (_context == null) _context = new TourBaseEntitiesDB(); return _context; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
+
     
         public virtual DbSet<Country> Country { get; set; }
         public virtual DbSet<Hotel> Hotel { get; set; }

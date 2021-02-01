@@ -84,6 +84,7 @@
     <Property Name="surname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Role" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Ticket" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <Association Name="FK_Hotel_Country">
     <End Role="Country" Type="Self.Country" Multiplicity="1" />

@@ -107,6 +107,7 @@ namespace ToursApp
                             break;
                         case "Admin":
                             WhatTheRole.role = Role.Admin;
+                            mn.TicketTake.Visibility = Visibility.Collapsed;
                             mn.Visibility = Visibility.Visible;
                             this.Close();
                             break;

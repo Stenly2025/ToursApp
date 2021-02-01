@@ -33,3 +33,5 @@ C:\Users\denis\source\repos\ToursApp\ToursApp\obj\Debug\AddHotel.g.cs
 C:\Users\denis\source\repos\ToursApp\ToursApp\obj\Debug\AddHotel.baml
 C:\Users\denis\source\repos\ToursApp\ToursApp\obj\Debug\AddTour.g.cs
 C:\Users\denis\source\repos\ToursApp\ToursApp\obj\Debug\AddTour.baml
+C:\Users\denis\source\repos\ToursApp\ToursApp\obj\Debug\TakeTicket.g.cs
+C:\Users\denis\source\repos\ToursApp\ToursApp\obj\Debug\TakeTicket.baml

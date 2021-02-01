@@ -30,6 +30,11 @@ namespace ToursApp
         private void backBtn(object sender, RoutedEventArgs e)
         {
             Menu mn = new Menu();
+            if (WhatTheRole.role == Role.Admin)
+            {
+                mn.TicketTake.Visibility = Visibility.Collapsed;
+            }
+            
             mn.Visibility = Visibility.Visible;
             this.Close();
         }

@@ -75,6 +75,7 @@
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="TourBaseModel.Users">
         <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Ticket" ColumnName="Ticket" />
           <ScalarProperty Name="login" ColumnName="login" />
           <ScalarProperty Name="password" ColumnName="password" />
           <ScalarProperty Name="name" ColumnName="name" />

@@ -1,0 +1,36 @@
+﻿<Window x:Class="ToursApp.TakeTicket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToursApp"
+        mc:Ignorable="d"
+        Title="TakeTicket" Height="428.4" Width="802.4" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="10,380,0,0" VerticalAlignment="Top" Width="75" Click="backBtn"/>
+        <ComboBox x:Name="CBoxTour" SelectedValue="{Binding Tour, Mode=TwoWay}" SelectedValuePath="Name" DisplayMemberPath="Name" HorizontalAlignment="Left" Margin="152,36,0,0" VerticalAlignment="Top" Width="256" SelectionChanged="CBoxTour_SelectionChanged"/>
+        <ComboBox x:Name="CBoxHotel" SelectedValue="{Binding Hotel, Mode=TwoWay}" SelectedValuePath="Name" DisplayMemberPath="Name" HorizontalAlignment="Left" Margin="152,95,0,0" VerticalAlignment="Top" Width="256" SelectionChanged="CBoxHotel_SelectionChanged"/>
+        <Label Content="Выберите тур" HorizontalAlignment="Left" Margin="22,35,0,0" VerticalAlignment="Top"/>
+        <Label Content="Выберите отель" HorizontalAlignment="Left" Margin="22,93,0,0" VerticalAlignment="Top"/>
+        <Label Content="Заполните данные для билета" HorizontalAlignment="Left" Margin="292,144,0,0" VerticalAlignment="Top"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="46,188,0,0" VerticalAlignment="Top"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="22,216,0,0" VerticalAlignment="Top"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="22,246,0,0" VerticalAlignment="Top"/>
+        <Label Content="Серия" HorizontalAlignment="Left" Margin="521,268,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер" HorizontalAlignment="Left" Margin="645,268,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="serial" HorizontalAlignment="Left" Height="22" Margin="569,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="71"/>
+        <TextBox x:Name="number" HorizontalAlignment="Left" Height="22" Margin="700,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="71"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="22" Margin="90,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213"/>
+        <TextBox x:Name="MidName" HorizontalAlignment="Left" Height="22" Margin="90,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213"/>
+        <TextBox x:Name="LastName" HorizontalAlignment="Left" Height="22" Margin="90,247,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213"/>
+        <Label Content="Паспортные данные" HorizontalAlignment="Left" Margin="533,170,0,0" VerticalAlignment="Top"/>
+        <Label Content="Кем выдан" HorizontalAlignment="Left" Margin="404,194,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="howVidan" HorizontalAlignment="Left" Height="23" Margin="486,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298"/>
+        <Label Content="Место регистрации" HorizontalAlignment="Left" Margin="360,232,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="placeRegister" HorizontalAlignment="Left" Height="23" Margin="486,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="709,380,0,0" VerticalAlignment="Top" Width="75" Click="userTicket"/>
+        <Label Content="email" HorizontalAlignment="Left" Margin="36,276,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Height="22" Margin="90,277,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213"/>
+
+    </Grid>
+</Window>
